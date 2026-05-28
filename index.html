@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Happy Birthday Kritika 💖</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    overflow-x:hidden;
+    background:linear-gradient(135deg,#fff0f5,#ffe6f2,#fff5e6);
+    color:#333;
+}
+
+/* Floating Hearts */
+
+.hearts span{
+    position:fixed;
+    bottom:-100px;
+    font-size:25px;
+    animation:float 10s linear infinite;
+    opacity:0.7;
+}
+
+.hearts span:nth-child(1){left:10%;animation-duration:8s;}
+.hearts span:nth-child(2){left:20%;animation-duration:10s;}
+.hearts span:nth-child(3){left:35%;animation-duration:12s;}
+.hearts span:nth-child(4){left:50%;animation-duration:9s;}
+.hearts span:nth-child(5){left:65%;animation-duration:13s;}
+.hearts span:nth-child(6){left:80%;animation-duration:11s;}
+
+@keyframes float{
+    0%{
+        transform:translateY(0) rotate(0deg);
+    }
+    100%{
+        transform:translateY(-120vh) rotate(360deg);
+    }
+}
+
+/* Hero */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:20px;
+    position:relative;
+}
+
+.hero-content{
+    animation:fadeUp 2s ease;
+}
+
+.hero h1{
+    font-size:5rem;
+    font-family:'Pacifico',cursive;
+    color:#ff4d88;
+    text-shadow:0 0 20px rgba(255,77,136,0.3);
+}
+
+.hero p{
+    margin-top:20px;
+    font-size:1.3rem;
+    max-width:800px;
+    line-height:1.8;
+}
+
+.hero button{
+    margin-top:35px;
+    padding:16px 40px;
+    border:none;
+    border-radius:50px;
+    background:#ff4d88;
+    color:white;
+    font-size:1rem;
+    cursor:pointer;
+    transition:0.4s;
+    box-shadow:0 10px 30px rgba(255,77,136,0.3);
+}
+
+.hero button:hover{
+    transform:scale(1.08);
+}
+
+/* Glass Cards */
+
+.glass{
+    backdrop-filter:blur(15px);
+    background:rgba(255,255,255,0.35);
+    border:1px solid rgba(255,255,255,0.4);
+}
+
+/* Sections */
+
+section{
+    padding:100px 20px;
+    text-align:center;
+}
+
+h2{
+    font-size:3rem;
+    color:#ff4d88;
+    margin-bottom:50px;
+}
+
+/* Photo */
+
+.photo-card{
+    width:350px;
+    margin:auto;
+    padding:15px;
+    border-radius:30px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.1);
+}
+
+.photo-card img{
+    width:100%;
+    border-radius:25px;
+}
+
+.photo-card p{
+    margin-top:20px;
+}
+
+/* Cake */
+
+.cake-box{
+    width:400px;
+    max-width:90%;
+    margin:auto;
+    padding:40px;
+    border-radius:30px;
+}
+
+.cake{
+    position:relative;
+    margin:30px auto;
+    width:220px;
+}
+
+.layer1,.layer2,.layer3{
+    height:60px;
+    border-radius:15px;
+    margin:auto;
+}
+
+.layer1{
+    width:100px;
+    background:#ffb3d9;
+}
+
+.layer2{
+    width:160px;
+    background:#ffd166;
+    margin-top:10px;
+}
+
+.layer3{
+    width:220px;
+    background:#ff7f50;
+    margin-top:10px;
+}
+
+.candles{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    position:absolute;
+    top:-45px;
+    width:100%;
+}
+
+.candles span{
+    width:10px;
+    height:35px;
+    background:white;
+    border-radius:10px;
+    position:relative;
+}
+
+.candles span::before{
+    content:"";
+    position:absolute;
+    width:12px;
+    height:12px;
+    background:gold;
+    border-radius:50%;
+    top:-10px;
+    left:50%;
+    transform:translateX(-50%);
+    animation:flicker 1s infinite;
+}
+
+@keyframes flicker{
+    0%,100%{opacity:1;}
+    50%{opacity:0.5;}
+}
+
+/* RCB */
+
+.rcb{
+    width:600px;
+    max-width:95%;
+    margin:auto;
+    padding:50px;
+    border-radius:30px;
+    background:linear-gradient(135deg,#d50000,#7f0000);
+    color:white;
+    box-shadow:0 20px 50px rgba(127,0,0,0.4);
+}
+
+.rcb h3{
+    font-size:2.5rem;
+    margin-bottom:20px;
+}
+
+/* Letter */
+
+.letter-box{
+    width:900px;
+    max-width:95%;
+    margin:auto;
+    padding:60px;
+    border-radius:35px;
+}
+
+.dog{
+    font-size:6rem;
+    animation:bounce 2s infinite;
+}
+
+@keyframes bounce{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-15px);
+    }
+}
+
+.letter{
+    text-align:left;
+    margin-top:40px;
+    line-height:2;
+    font-size:1.1rem;
+}
+
+.signature{
+    margin-top:40px;
+    font-family:'Pacifico',cursive;
+    color:#ff4d88;
+    font-size:2rem;
+}
+
+/* Music Button */
+
+.music-btn{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    border:none;
+    background:#ff4d88;
+    color:white;
+    font-size:28px;
+    cursor:pointer;
+    box-shadow:0 10px 30px rgba(255,77,136,0.4);
+}
+
+/* Footer */
+
+footer{
+    padding:30px;
+    text-align:center;
+    background:#ff4d88;
+    color:white;
+    margin-top:80px;
+}
+
+/* Animations */
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(60px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:3rem;
+    }
+
+    h2{
+        font-size:2.2rem;
+    }
+
+    .hero p{
+        font-size:1rem;
+    }
+
+    .letter-box{
+        padding:30px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Floating Hearts -->
+
+<div class="hearts">
+    <span>💖</span>
+    <span>💕</span>
+    <span>🌸</span>
+    <span>💗</span>
+    <span>✨</span>
+    <span>❤️</span>
+</div>
+
+<!-- Hero -->
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Happy Birthday Kritika 🎂</h1>
+
+        <p>
+            To my bestest cutest friend 💖 <br>
+            Thank you for supporting me everytime,
+            helping me in every situation and making life happier 🌸
+        </p>
+
+        <button onclick="document.getElementById('letter').scrollIntoView({behavior:'smooth'})">
+            Open Surprise 💌
+        </button>
+    </div>
+</section>
+
+<!-- Photo -->
+
+<section>
+    <h2>Your Beautiful Smile 🌸</h2>
+
+    <div class="photo-card glass">
+        <img src="https://placehold.co/400x500/png?text=Kritika+Photo" alt="">
+        <p>Replace this with Kritika's cutest photo 💖</p>
+    </div>
+</section>
+
+<!-- Cake -->
+
+<section>
+    <h2>Flower Birthday Cake 🎂🌺</h2>
+
+    <div class="cake-box glass">
+
+        <div class="cake">
+
+            <div class="candles">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="layer1"></div>
+            <div class="layer2"></div>
+            <div class="layer3"></div>
+
+        </div>
+
+        <p>
+            A special flower cake for the sweetest person ever 💕
+        </p>
+
+    </div>
+</section>
+
+<!-- RCB -->
+
+<section>
+    <h2>Cutest RCB Fan ❤️🏏</h2>
+
+    <div class="rcb">
+
+        <h3>Ee Sala Cup Namde 😎</h3>
+
+        <p>
+            Your love for RCB is legendary 😂❤️ <br><br>
+
+            Just like your friendship —
+            loyal, strong, emotional and unforgettable ✨
+        </p>
+
+    </div>
+</section>
+
+<!-- Letter -->
+
+<section id="letter">
+
+    <h2>Special Surprise Letter 💌</h2>
+
+    <div class="letter-box glass">
+
+        <div class="dog">
+            🐶
+        </div>
+
+        <p>
+            Birthday doggo delivered your secret letter 🐾
+        </p>
+
+        <div class="letter">
+
+            <p><b>Dear Kritika,</b></p>
+
+            <br>
+
+            <p>
+                Happy Birthday to the most adorable,
+                caring and supportive person ever 💖
+            </p>
+
+            <p>
+                Thank you for always being there for me,
+                helping me, supporting me and making everything better.
+            </p>
+
+            <p>
+                Your smile, kindness and cute energy make people happy 🌸
+            </p>
+
+            <p>
+                You deserve unlimited happiness,
+                success, love and all the beautiful things in life ✨
+            </p>
+
+            <p>
+                Stay the same sweet soul forever 💕
+            </p>
+
+            <p>
+                And yes... I hope RCB finally wins for their cutest fan 😭❤️🏏
+            </p>
+
+            <div class="signature">
+                — From Your Best Friend ✨
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Music -->
+
+<button class="music-btn" onclick="playMusic()">
+🎵
+</button>
+
+<audio id="song">
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+</audio>
+
+<footer>
+    Made with ❤️ specially for Kritika
+</footer>
+
+<script>
+
+window.onload = () => {
+
+    setTimeout(() => {
+        alert("🎉 Happy Birthday Kritika 💖");
+    },1000);
+
+}
+
+function playMusic(){
+
+    const song = document.getElementById("song");
+
+    if(song.paused){
+        song.play();
+    }else{
+        song.pause();
+    }
+
+}
+
+</script>
+
+</body>
+</html>
